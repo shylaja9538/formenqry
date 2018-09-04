@@ -1,0 +1,49 @@
+<html>
+{% load staticfiles %}
+ <head>
+   <title>homepage</title>
+ </head>
+ <body>
+   <center><h2> USER DETAILS </h2>
+   <table border="1" width:20 >
+   <thead>
+     <th>Name</th>
+     <th>contact</th>
+     <th>  Email</th>
+    <th>   Lead_from</th>
+    <th>     Called_by</th>
+      <th>   Course</th>
+      <th>   Interview_type</th>
+      <th>   Education</th>
+      <th>   Specialization</th>
+      <th>   year_of_passing</th>
+      <th>   fresher_experience</th>
+        <th> Time_in</th>
+        <th> Time_out</th>
+
+   </thead>
+   <tbody>
+     <tr>
+       {% for i in insert %}
+       <td>{{ i.Name }}</td>
+       <td>{{ i.Contact }}</th>
+       <td>{{ i.Email }}</td>
+      <td>  {{ i.Lead_from }}</td>
+      <td>    {{ i.Called_by }}</td>
+        <td>   {{ i.Course }}</td>
+        <td>   {{ i.Interview_type }}</td>
+        <td>   {{ i.Education }}</td>
+        <td>   {{ i.Specialization }}</td>
+        <td>   {{ i.year_of_passing }}</td>
+        <td>   {{ i.fresher_experience }}</td>
+          <td> {{ i.Time_in }}</td>
+          <td> {{ i.Time_out }}</td>
+
+            </tr>
+           {% endfor %}
+         </tbody>
+       </table>
+
+</center>
+      </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1">
+  <style>
+  body{font-family: Arial, Helvetica, sans-serif;}
+  form {border: 3px solid #f1f1f1;}
+
+  input[type=text],
+  input[type=password]
+  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin:8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .cancelbtn{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  .container {
+    padding: 16px
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  </style>
+<title>
+Login
+</title>
+</head>
+<body>
+
+<h2 style="text-align:center;color:green"> Sign-up Form</h2>
+
+<div id="id01">
+
+  <form >
+<table>
+<tr>
+<td>
+    <div class="container">
+	<h4 Style="color:blue"><i>Enter Log in Details:-</i></h4>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+      <span class="psw"><a href="#">Forgot password?</a></span>
+	   </div>
+	   </form>
+	</td>
+	<td>
+	<form>
+    <div class="container">
+	<h4 Style="color:blue"><b><i>Enter details to sign up:-</i></b></h4>
+       <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Name" name="name" required>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="email" required>
+	  <label for="phone"><b>Phone no.</b></label>
+      <input type="text" placeholder="Phone no." name="phone" required>
+      <label for="pas"><b>Password</b></label>
+      <input type="Password" placeholder="Password" id="pas" name="pas" required>
+	  <label for="cpas"><b>Confirm Password</b></label>
+      <input type="Password" placeholder="Confirm Password" id="cpas" name="cpas" required>
+	  <button type="submit" onclick="return Validate()">Sign up</button>
+    </div>
+
+	  </td>
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("pas").value;
+        var confirmPassword = document.getElementById("cpas").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

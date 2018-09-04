@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body_block %}
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>HOME PAGE</h1>
+    {% if user.is_authenticated %}
+        <h2>Welcome {{ user.username }}!</h2>
+    {% else %}
+        <h2>Welcome to the site!</h2>
+    {% endif %}
+  </div>
+</div>
+
+<a href="{% url 'find_search' %}"><button id="searchbtn" class="btn btn-outline-success my-2 my-sm-2" type="submit">&emsp;&emsp;&emsp;&emsp;&emsp;search&emsp;&emsp;&emsp;&emsp;&emsp;</button></a>
+<ul>
+<li><h2><a href="{% url 'form_view' %}">Fill_form</a></h2></li>
+<li><h2><a href="{% url 'showfile' %}">Upload resume</a></h2></li>
+<li><h2><a href="{% url 'form_rets' %}">get_details</a></h2></li>
+<li><h2><a href="{% url 'logout' %}">Logout</a></h2></li>
+
+
+
+{% endblock %}

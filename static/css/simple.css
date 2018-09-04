@@ -1,0 +1,28 @@
+.body{background-color:silver;}
+p{text-align:justify;color:black;font-size:20pt;}
+h2{font-family: 'lucida handwriting';
+font-size:50pt;}
+h1
+{
+background-color:aqua;
+border-top-style:dotted;
+border-right-style:dotted;
+border-left-style:dotted;
+border-bottom-style:dotted;
+border-top-width:1pt;
+border-bottom-width: 1pt;
+border-right-width: 1pt;
+border-left-width:1pt;
+margin:0.7in;
+}
+{
+margin:5.1in;
+padding:0.5in;
+background-color:blue;
+border-top-style:dotted;
+border-right-style:dotted;border-left-style:dotted;border-bottom-style:dotted;
+border-top-color:black;
+border-bottom-color:black;
+border-right-color:black;
+border-leftp-color:black;
+}
